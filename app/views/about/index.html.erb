@@ -1,0 +1,6 @@
+<% @authors.each do |author| %>
+
+  <h1><%= author.name %></h1>
+  <%= image_tag author.image.url %>
+  
+<% end %>

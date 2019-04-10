@@ -13,6 +13,12 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 
+gem 'activeadmin'
+gem 'devise'
+gem 'cancancan'
+gem 'draper'
+gem 'pundit'
+
 group :production do 
   gem 'pg'
 end
