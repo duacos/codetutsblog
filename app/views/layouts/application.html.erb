@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=500, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1" />
     <title>Codetutsblog</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,6 +13,8 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>

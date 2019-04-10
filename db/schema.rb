@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_10_203305) do
+ActiveRecord::Schema.define(version: 2019_04_10_210009) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
@@ -44,6 +44,10 @@ ActiveRecord::Schema.define(version: 2019_04_10_203305) do
     t.text "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "background_file_name"
+    t.string "background_content_type"
+    t.bigint "background_file_size"
+    t.datetime "background_updated_at"
     t.index ["author_id"], name: "index_articles_on_author_id"
   end
 

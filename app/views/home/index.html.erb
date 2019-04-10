@@ -1,8 +1,59 @@
+<header>
+  <div class="imgcont wraper">
+    <nav>
+      <ul>
+        <li><%= link_to 'Home', '#' %></li>
+        <li><%= link_to 'Home', '#' %></li>
+        <li><%= link_to 'Home', '#' %></li>
+        <li><%= link_to 'Home', '#' %></li>
+        <li><%= link_to 'Home', '#' %></li>
+      </ul>
+    </nav>
+    <div class="covertext">
+      <h3>New Article</h3>
+      <h1><%= @first_article.title %></h1>
+    </div>
+    <div class="gradient">
+      <%= image_tag @first_article.background.url, class: 'imgback' %>
+    </div>
+  </div>
+</header>
+
+
 <section>
   <div class="title">
     <h2>Newest Tutorials</h2>
   </div>
   <div class="content">
-      Hola Mundo
+
+    <% @articles.each do |article| %>
+      <li class="post">
+				<div class="post-text">
+					<div class="post-entrance">
+						<h3><%= article.title %></h3>
+						<div class="post-txt">
+							<p><%= article.body %></p>
+						</div>
+						<div class="post-dots">Keep reading...</div>
+					</div>
+				</div>
+        <%= image_tag article.background.url(:medium), class: 'post-image' %>
+			</li>
+    <% end %>
+      
   </div>
 </section>
+
+<div class="yt-box">
+  <div class="content yt-di">
+    <div class="content yt-text direction">	
+      <h3>Aprende a programar con videotutoriales</h3>
+      <h4>!Nuevo video todas las semanas!</h4>
+    </div>
+
+    <div class="direction yt-img">
+
+      <%= image_tag 'youtube.svg', class: 'yt-img' %>
+    </div>
+  </div>
+</div>
