@@ -1,14 +1,6 @@
 <header>
   <div class="imgcont wraper">
-    <nav>
-      <ul>
-        <li><%= link_to 'Home', '#' %></li>
-        <li><%= link_to 'Home', '#' %></li>
-        <li><%= link_to 'Home', '#' %></li>
-        <li><%= link_to 'Home', '#' %></li>
-        <li><%= link_to 'Home', '#' %></li>
-      </ul>
-    </nav>
+    <%= render 'partials/menu' %>
     <div class="covertext">
       <h3>New Article</h3>
       <h1><%= @first_article.title %></h1>
