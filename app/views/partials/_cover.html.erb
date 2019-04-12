@@ -1,0 +1,10 @@
+<div class="imgcont wraper">
+  <%= render 'partials/menu' %>
+  <div class="covertext">
+    <h3>New Article</h3>
+    <h1><%= article.title %></h1>
+  </div>
+  <div class="gradient">
+    <%= image_tag article.background.url, class: 'imgback' %>
+  </div>
+</div>

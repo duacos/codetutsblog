@@ -1,14 +1,5 @@
 <header>
-  <div class="imgcont wraper">
-    <%= render 'partials/menu' %>
-    <div class="covertext">
-      <h3>New Article</h3>
-      <h1><%= @first_article.title %></h1>
-    </div>
-    <div class="gradient">
-      <%= image_tag @first_article.background.url, class: 'imgback' %>
-    </div>
-  </div>
+  <%= render 'partials/cover', article: @first_article %>
 </header>
 
 
