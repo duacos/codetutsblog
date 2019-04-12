@@ -19,6 +19,8 @@ gem 'cancancan'
 gem 'draper'
 gem 'pundit'
 
+gem 'redcarpet'
+
 group :production do 
   gem 'pg'
 end

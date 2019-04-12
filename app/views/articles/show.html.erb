@@ -1,6 +1,20 @@
 <%= render 'partials/cover', article: @article %>
 
 
-<div class="content">
 
+  <div class="content-article">
+    <%= markdown(@article.body) %>
+
+
+  </div>
+
+<div class="content">
+  <div class="author-box">
+    <div class="author-image author-item"><%= image_tag @article.author.image(:medium) %></div>
+    <div class="author-text author-item">
+      <div class="author-name"><%= @article.author.name %></div>
+      <div class="author-info"><%= @article.author.description %></div>
+    </div>
+   
+  </div>
 </div>
