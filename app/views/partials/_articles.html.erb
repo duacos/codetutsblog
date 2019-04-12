@@ -1,0 +1,18 @@
+<div class="content">
+
+  <% @articles.each do |article| %>
+    <li class="post">
+      <div class="post-text">
+        <div class="post-entrance">
+          <h3><%= article.title %></h3>
+          <div class="post-txt">
+            <p><%= article.body %></p>
+          </div>
+          <div class="post-dots">Continuar leyendo...</div>
+        </div>
+      </div>
+      <%= image_tag article.background.url(:medium), class: 'post-image' %>
+    </li>
+  <% end %>
+      
+  </div>
