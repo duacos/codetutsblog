@@ -34,6 +34,7 @@ body
   top: 11em
   color: white
   padding: 2em 20%
+  z-index: 2
   h1
     font-size: 45px
   h3
@@ -128,13 +129,29 @@ body
     text-align: left
     background-color: white
     font-family: 'Lora', serif
+    line-height: 1.5em
     font-weight: lighter
     padding-left: 20%
     padding-right: 20%
     font-size: 1.2em
     padding-top: 1.2em
     padding-bottom: 1.2em
-    
+
+    img
+      width: 100%
+
+    blockquote 
+      background: #f9f9f9
+      padding: 1.4em
+      p 
+        color: black
+        font-weight: bold
+      em 
+        color: gray
+
+
+.header-bg
+  background-color: #505050
   
 
 .container
@@ -153,7 +170,6 @@ body
     left: 50%
     transform: translate(-50%,-50%)
     top: 7em
-    z-index: -1
     width: 1422px
 
 
@@ -220,6 +236,7 @@ body
   background: rgba(0,0,0,.3)
   width: 100%
   text-align: right
+  z-index: 2
   ul
     margin: 0
   li
