@@ -18,6 +18,7 @@ gem 'cancancan'
 gem 'draper'
 gem 'pundit'
 gem "mini_magick"
+gem 'aws-sdk-s3', '~> 1'
 gem 'redcarpet'
 
 group :production do 
