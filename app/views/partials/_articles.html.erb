@@ -13,7 +13,7 @@
           <div class="post-dots"><%= link_to 'Leer más...', article %></div>
         </div>
       </div>
-      <%= image_tag article.background.url(:medium), class: 'post-image' %>
+      <%= image_tag article.cover_image.variant(resize: "500x500") , class: 'post-image' %>
     </li>
   <% end %>
       

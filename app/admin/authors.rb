@@ -1,11 +1,11 @@
 ActiveAdmin.register Author do
-  permit_params :name, :image, :description
+  permit_params :name, :avatar, :description
 
   form :html => { :multipart => true } do |f|
 
     f.inputs :name
     f.inputs "Upload" do
-      f.input :image, :type => :file
+      f.input :avatar, as: :file
     end
     f.inputs :description
     f.actions

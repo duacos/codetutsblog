@@ -4,12 +4,12 @@
 
     <div class="covertext">
     <% if new then %>
-      <h3>Nuevo tema</h3>
+      <h3>reciente</h3>
     <% end %>
       <h1><%= article.title %></h1>
     </div>
     <div class="gradient">
-      <%= image_tag article.background.url, class: 'imgback' %>
+      <%= image_tag article.cover_image, class: 'imgback' %>
     </div>
   </div>
 </div>

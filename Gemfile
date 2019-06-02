@@ -11,14 +11,13 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
-gem "paperclip", git: "git://github.com/thoughtbot/paperclip.git"
 
 gem 'activeadmin'
 gem 'devise'
 gem 'cancancan'
 gem 'draper'
 gem 'pundit'
-
+gem "mini_magick"
 gem 'redcarpet'
 
 group :production do 
@@ -27,6 +26,8 @@ end
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'figaro'
+  gem 'aws-sdk-s3', '~> 1'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 

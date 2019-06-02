@@ -1,5 +1,5 @@
 ActiveAdmin.register Article do
-  permit_params :title, :background ,:author_id, :body
+  permit_params :title, :cover_image, :author_id, :body
 
 
   form :html => { :multipart => true } do |f|
@@ -7,7 +7,7 @@ ActiveAdmin.register Article do
     f.inputs "Details" do 
       f.input :author_id, :as => :select, :collection => Author.all.map {|u| [u.name.to_s, u.id]}
       f.input :title
-      f.input :background, :type => :file
+      f.input :cover_image, as: :file
       f.input :body
     end
 
