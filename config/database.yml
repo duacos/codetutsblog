@@ -26,5 +26,3 @@ test:
 
 production:
   adapter: postgresql
-  encoding: unicodeubyonrails.org/configuring.html#database-pooling
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
