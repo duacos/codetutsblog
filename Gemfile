@@ -20,13 +20,9 @@ gem 'pundit'
 gem "mini_magick"
 gem 'aws-sdk-s3', '~> 1'
 gem 'redcarpet'
-
-group :production do 
-  gem 'pg'
-end
+gem 'pg'
 
 group :development, :test do
-  gem 'sqlite3'
   gem 'figaro'
   gem 'aws-sdk-s3', '~> 1'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
