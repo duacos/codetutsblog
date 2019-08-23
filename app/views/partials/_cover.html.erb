@@ -1,12 +1,19 @@
 <div class="header-bg">
+  <%= image_tag article.cover_image, class: 'header-bg-img' %>
   <div class="imgcont wraper">
     <%= render 'partials/menu' %>
 
     <div class="covertext">
-    <% if new then %>
+      <% if new then %>
       <h3>reciente</h3>
-    <% end %>
+
       <h1><%= article.title %></h1>
+      <% end %> <% if author then %>
+      <div class="author-image author-item">
+        <%= image_tag author.avatar %>
+        <h1><%= author.name %></h1>
+      </div>
+      <% end %>
     </div>
     <div class="gradient">
       <%= image_tag article.cover_image, class: 'imgback' %>

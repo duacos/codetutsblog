@@ -1,20 +1,18 @@
 <div class="content">
-
   <% @articles.each do |article| %>
-    <li class="post">
-      <div class="post-text">
-        <div class="post-entrance">
-          <h3><%= link_to article.title, article %></h3>
-          <div class="post-txt">
-            <p><%= article.body %></p>
-          </div>
-
-
-          <div class="post-dots"><%= link_to 'Leer más...', article %></div>
+  <li class="post">
+    <div class="post-text">
+      <div class="post-entrance">
+        <h3><%= link_to article.title, article %></h3>
+        <div class="post-txt">
+          <p><%= article.body %></p>
         </div>
+
+        <div class="post-dots"><%= link_to 'Leer más...', article %></div>
       </div>
-      <%= image_tag article.cover_image.variant(resize: "500x500") , class: 'post-image' %>
-    </li>
+    </div>
+    <%= image_tag article.cover_image.variant(resize: "500x500") , class:
+    'post-image' %>
+  </li>
   <% end %>
-      
-  </div>
+</div>

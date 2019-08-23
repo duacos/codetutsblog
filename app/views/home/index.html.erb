@@ -1,7 +1,7 @@
 <header>
-  <%= render 'partials/cover', article: @first_article, new: true %>
+  <%= render 'partials/cover', article: @first_article, author: nil, new: true
+  %>
 </header>
-
 
 <section>
   <div class="title">
@@ -14,14 +14,18 @@
 
 <div class="yt-box">
   <div class="content yt-di">
-    <div class="content yt-text direction">	
+    <div class="content yt-text direction">
       <h3>Aprende a programar con videotutoriales</h3>
       <h4>!Nuevo video todas las semanas!</h4>
     </div>
 
     <div class="direction yt-img">
-      <a href="https://www.youtube.com/channel/UCFmGcSriFLqhfZlZTYPIv2Q" target="_blank">
-        <%= image_tag 'youtube.svg', class: 'yt-img', alt: "Codetuts youtube channel" %>
+      <a
+        href="https://www.youtube.com/channel/UCFmGcSriFLqhfZlZTYPIv2Q"
+        target="_blank"
+      >
+        <%= image_tag 'youtube.svg', class: 'yt-img', alt: "Codetuts youtube
+        channel" %>
       </a>
     </div>
   </div>

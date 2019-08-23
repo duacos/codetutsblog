@@ -6,6 +6,7 @@ default: &default
   pool: 5
   timeout: 5000
   host: <%= ENV['POSTGRES_HOST'] %>
+  port: 8000
 
 development:
   <<: *default

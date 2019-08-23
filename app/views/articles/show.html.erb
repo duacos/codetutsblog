@@ -1,20 +1,31 @@
-<%= render 'partials/cover', article: @article, new: false %>
+<%= render 'partials/cover', article: @article, author: @article.author, new:
+false %>
 
-
-
+<div class="container-article">
   <div class="content-article">
     <%= markdown(@article.body) %>
-
-
   </div>
 
+  <aside class="banner">
+    <%= image_tag 'mini.png' %>
+
+    <p>
+      Aprende a crear funciones personalizadas en Javascript y reutilizar
+      código. En el siguiente video profundizaremos un poco más en el tema de
+      funciones.
+    </p>
+  </aside>
+</div>
+<!--
 <div class="content">
   <div class="author-box">
-    <div class="author-image author-item"><%= image_tag @article.author.avatar %></div>
+    <div class="author-image author-item">
+      <%= image_tag @article.author.avatar %>
+    </div>
     <div class="author-text author-item">
       <div class="author-name"><%= @article.author.name %></div>
       <div class="author-info"><%= @article.author.description %></div>
     </div>
-   
   </div>
 </div>
+-->
